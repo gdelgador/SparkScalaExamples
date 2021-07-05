@@ -3,7 +3,7 @@
 This repository examples written in Scala - spark 
 
 ## How download my code
-    <code> git clone https://github.com/gdelgador/SparkScalaExamples.git </code>
+    git clone https://github.com/gdelgador/SparkScalaExamples.git
 
 ## How config the project
  I strongly recommend install [Intellij](https://www.jetbrains.com/es-es/idea/download/)

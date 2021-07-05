@@ -23,8 +23,4 @@ object Mario extends App {
     println( x(number - i).concat(p(i)) )
   }
 
-
-
-
-
 }
