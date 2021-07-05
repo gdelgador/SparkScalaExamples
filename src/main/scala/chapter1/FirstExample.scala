@@ -22,7 +22,7 @@ object FirstExample extends App{
   val maxAge = 60
 
   def getPersons(nroOfPerson:Int) = for(i <- Range(0,nroOfPerson)) yield
-    Person(names(random.nextInt(namesLength)), minAge + random.nextInt((maxAge - minAge + 1)))
+    Person(names(random.nextInt(namesLength)), minAge + random.nextInt(maxAge - minAge + 1))
 
 
   val teams = getPersons(100)
@@ -30,7 +30,7 @@ object FirstExample extends App{
   teamsRdd
     .filter(_.age > 40)
     .map(t => Person(t.name.toUpperCase,t.age))
-   .map( _.toString)
+    .map( _.toString)
     .map(str => {
       val detector = new CharsetDetector()
       detector.setText(str.getBytes())
